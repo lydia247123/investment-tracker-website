@@ -35,11 +35,13 @@ jobs:
 
       - name: Build
         run: npm run build
+        env:
+          NEXT_PUBLIC_BASE_PATH: /investment-tracker-website
 
-      - name: Copy public images to output
+      - name: Copy public images
         run: |
           mkdir -p out/investment-tracker-website/images
-          cp -r public/images out/investment-tracker-website/
+          cp -r public/images/* out/investment-tracker-website/images/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

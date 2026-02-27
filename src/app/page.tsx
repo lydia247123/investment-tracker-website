@@ -1,3 +1,6 @@
+// Image paths configuration
+const IMAGE_BASE = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900">
@@ -129,7 +132,7 @@ export default function Home() {
             {/* Screenshot 1: Dashboard */}
             <div className="group relative overflow-hidden rounded-lg shadow-lg bg-gray-100 dark:bg-gray-800">
               <img
-                src="/images/screenshots/dashboard.png"
+                src={`${IMAGE_BASE}/images/screenshots/dashboard.png`}
                 alt="Dashboard showing investment overview and charts"
                 className="w-full h-auto transform transition-transform duration-300 group-hover:scale-105"
               />
@@ -142,7 +145,7 @@ export default function Home() {
             {/* Screenshot 2: Investment Tracker */}
             <div className="group relative overflow-hidden rounded-lg shadow-lg bg-gray-100 dark:bg-gray-800">
               <img
-                src="/images/screenshots/InvestmentTracker.png"
+                src={`${IMAGE_BASE}/images/screenshots/InvestmentTracker.png`}
                 alt="Investment tracker showing detailed records"
                 className="w-full h-auto transform transition-transform duration-300 group-hover:scale-105"
               />
@@ -155,7 +158,7 @@ export default function Home() {
             {/* Screenshot 3: Analytics */}
             <div className="group relative overflow-hidden rounded-lg shadow-lg bg-gray-100 dark:bg-gray-800">
               <img
-                src="/images/screenshots/RiskAnalytics.png"
+                src={`${IMAGE_BASE}/images/screenshots/RiskAnalytics.png`}
                 alt="Risk analytics and distribution charts"
                 className="w-full h-auto transform transition-transform duration-300 group-hover:scale-105"
               />
@@ -168,7 +171,7 @@ export default function Home() {
             {/* Screenshot 4: Settings */}
             <div className="group relative overflow-hidden rounded-lg shadow-lg bg-gray-100 dark:bg-gray-800">
               <img
-                src="/images/screenshots/settings.png"
+                src={`${IMAGE_BASE}/images/screenshots/settings.png`}
                 alt="Settings and account management"
                 className="w-full h-auto transform transition-transform duration-300 group-hover:scale-105"
               />
