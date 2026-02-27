@@ -115,6 +115,72 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Screenshots Section */}
+      <section className="py-20 px-4">
+        <div className="max-w-7xl mx-auto">
+          <h3 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-4">
+            Application Screenshots
+          </h3>
+          <p className="text-center text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto">
+            Take a look at the clean, intuitive interface designed for effortless investment tracking
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Screenshot 1: Dashboard */}
+            <div className="group relative overflow-hidden rounded-lg shadow-lg bg-gray-100 dark:bg-gray-800">
+              <img
+                src="/images/screenshots/dashboard.png"
+                alt="Dashboard showing investment overview and charts"
+                className="w-full h-auto transform transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                <h4 className="text-white font-semibold text-lg">Dashboard</h4>
+                <p className="text-gray-200 text-sm">Overview of your investment portfolio with interactive charts</p>
+              </div>
+            </div>
+
+            {/* Screenshot 2: Investment Tracker */}
+            <div className="group relative overflow-hidden rounded-lg shadow-lg bg-gray-100 dark:bg-gray-800">
+              <img
+                src="/images/screenshots/InvestmentTracker.png"
+                alt="Investment tracker showing detailed records"
+                className="w-full h-auto transform transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                <h4 className="text-white font-semibold text-lg">Investment Tracker</h4>
+                <p className="text-gray-200 text-sm">Manage and track all your investment records in one place</p>
+              </div>
+            </div>
+
+            {/* Screenshot 3: Analytics */}
+            <div className="group relative overflow-hidden rounded-lg shadow-lg bg-gray-100 dark:bg-gray-800">
+              <img
+                src="/images/screenshots/RiskAnalytics.png"
+                alt="Risk analytics and distribution charts"
+                className="w-full h-auto transform transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                <h4 className="text-white font-semibold text-lg">Risk Analytics</h4>
+                <p className="text-gray-200 text-sm">Detailed risk analysis and distribution visualization</p>
+              </div>
+            </div>
+
+            {/* Screenshot 4: Settings */}
+            <div className="group relative overflow-hidden rounded-lg shadow-lg bg-gray-100 dark:bg-gray-800">
+              <img
+                src="/images/screenshots/settings.png"
+                alt="Settings and account management"
+                className="w-full h-auto transform transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                <h4 className="text-white font-semibold text-lg">Settings</h4>
+                <p className="text-gray-200 text-sm">Manage accounts and customize your experience</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Tech Stack */}
       <section className="py-20 px-4">
         <div className="max-w-7xl mx-auto">
