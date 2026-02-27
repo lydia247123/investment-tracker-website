@@ -36,6 +36,11 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Copy public images to output
+        run: |
+          mkdir -p out/investment-tracker-website/images
+          cp -r public/images out/investment-tracker-website/
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
